@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>List</title>
-    </head>
-    <body>
+{% extends "base.html" %}
+
+{% block title %}
+ Restaurants List 
+{% endblock title %}
+{% block content %}
         {% for restaurant in restaurants %}
             <a href="{% url 'restaurant-detail' restaurant.id %}">
                 <ul>
@@ -15,5 +14,5 @@
                 </ul>
             </a>
         {% endfor %}
-    </body>
-</html>
+  
+{% endblock content %}

@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Detail</title>
+{% extends "base.html" %}
+
+{% block title %}
+ {{restaurant.name}} Dtails 
+{% endblock title %}
+{% block content %}
+
     </head>
     <body>
         <ul>
@@ -11,5 +13,4 @@
             <li>{{restaurant.opening_time}}</li>
             <li>{{restaurant.closing_time}}</li>
         </ul>
-    </body>
-</html>
+  {% endblock content %}
